@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Véhicules Essentiels - GTA Online Guide</title>
+    <meta name="description" content="Les 10 véhicules essentiels de GTA Online : stats complètes, prix et recommandations">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <span class="gta">GTA</span>
+                <span class="online">ONLINE</span>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="gameplay.html" class="nav-link">Gameplay</a>
+                <a href="business.html" class="nav-link">Business</a>
+                <a href="vehicles.html" class="nav-link active">Véhicules</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-vehicles">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="VÉHICULES">VÉHICULES</span>
+            </h1>
+            <p class="hero-subtitle">Les 10 véhicules essentiels pour dominer Los Santos</p>
+            <div class="hero-stats-mini">
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">🏎️</span>
+                    <span class="mini-stat-text">10 essentiels</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">⚡</span>
+                    <span class="mini-stat-text">Stats complètes</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">🚀</span>
+                    <span class="mini-stat-text">Tous armés</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#essentials" class="btn btn-primary">Top véhicules</a>
+                <a href="#catalog" class="btn btn-secondary">Catalogue</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Vehicle Carousel -->
+    <section class="vehicle-showcase">
+        <div class="container">
+            <h2 class="section-title">Véhicules Recommandés</h2>
+            <p class="section-subtitle">Découvrez les meilleurs véhicules du jeu</p>
+            
+            <div class="vehicle-carousel-wrapper">
+                <button class="carousel-nav prev-vehicle" id="prevVehicle">‹</button>
+                
+                <div class="vehicle-carousel-container">
+                    <div class="vehicle-carousel-track" id="vehicleTrack">
+                        <!-- Oppressor Mk II -->
+                        <div class="vehicle-carousel-card" data-vehicle="oppressor">
+                            <div class="vehicle-badge top-pick">TOP PICK</div>
+                            <div class="vehicle-image-big">🏍️</div>
+                            <h3 class="vehicle-name">Oppressor Mk II</h3>
+                            <div class="vehicle-price-display">8,000,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 130 mph</span>
+                                <span class="feature-badge"><span class="icon">🚀</span> Missiles</span>
+                                <span class="feature-badge"><span class="icon">✈️</span> Vol</span>
+                            </div>
+                            <p class="vehicle-tagline">La moto volante incontournable</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Toreador -->
+                        <div class="vehicle-carousel-card" data-vehicle="toreador">
+                            <div class="vehicle-badge priority">PRIORITÉ #2</div>
+                            <div class="vehicle-image-big">🚗</div>
+                            <h3 class="vehicle-name">Toreador</h3>
+                            <div class="vehicle-price-display">3,660,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 135 mph</span>
+                                <span class="feature-badge"><span class="icon">🔄</span> Boost ∞</span>
+                                <span class="feature-badge"><span class="icon">🌊</span> Amphibie</span>
+                            </div>
+                            <p class="vehicle-tagline">Polyvalence & puissance maximales</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Krieger -->
+                        <div class="vehicle-carousel-card" data-vehicle="krieger">
+                            <div class="vehicle-badge best">BEST RACING</div>
+                            <div class="vehicle-image-big">🏎️</div>
+                            <h3 class="vehicle-name">Krieger</h3>
+                            <div class="vehicle-price-display">2,875,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 127 mph</span>
+                                <span class="feature-badge"><span class="icon">🏁</span> Adhérence</span>
+                                <span class="feature-badge"><span class="icon">⭐</span> Top tier</span>
+                            </div>
+                            <p class="vehicle-tagline">Meilleure supercar pour courses</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Sparrow -->
+                        <div class="vehicle-carousel-card" data-vehicle="sparrow">
+                            <div class="vehicle-badge utility">UTILITAIRE</div>
+                            <div class="vehicle-image-big">🚁</div>
+                            <h3 class="vehicle-name">Sparrow</h3>
+                            <div class="vehicle-price-display">1,815,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 168 mph</span>
+                                <span class="feature-badge"><span class="icon">⏱️</span> Spawn ⚡</span>
+                                <span class="feature-badge"><span class="icon">🚀</span> Missiles</span>
+                            </div>
+                            <p class="vehicle-tagline">Essentiel pour Cayo Perico</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Kuruma -->
+                        <div class="vehicle-carousel-card" data-vehicle="kuruma">
+                            <div class="vehicle-badge budget">BUDGET</div>
+                            <div class="vehicle-image-big">🚙</div>
+                            <h3 class="vehicle-name">Kuruma Blindée</h3>
+                            <div class="vehicle-price-display">525,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 109 mph</span>
+                                <span class="feature-badge"><span class="icon">🛡️</span> Blindage</span>
+                                <span class="feature-badge"><span class="icon">💰</span> Budget</span>
+                            </div>
+                            <p class="vehicle-tagline">Protection totale PvE</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Vigilante -->
+                        <div class="vehicle-carousel-card" data-vehicle="vigilante">
+                            <div class="vehicle-badge special">SPECIAL</div>
+                            <div class="vehicle-image-big">🦇</div>
+                            <h3 class="vehicle-name">Vigilante</h3>
+                            <div class="vehicle-price-display">3,750,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 147 mph</span>
+                                <span class="feature-badge"><span class="icon">🔥</span> Boost ∞</span>
+                                <span class="feature-badge"><span class="icon">🚀</span> Missiles</span>
+                            </div>
+                            <p class="vehicle-tagline">Batmobile avec boost infini</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Deluxo -->
+                        <div class="vehicle-carousel-card" data-vehicle="deluxo">
+                            <div class="vehicle-badge fun">FUN</div>
+                            <div class="vehicle-image-big">🚗</div>
+                            <h3 class="vehicle-name">Deluxo</h3>
+                            <div class="vehicle-price-display">4,721,500 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">✈️</span> Vol</span>
+                                <span class="feature-badge"><span class="icon">🎬</span> Iconique</span>
+                                <span class="feature-badge"><span class="icon">🚀</span> Missiles</span>
+                            </div>
+                            <p class="vehicle-tagline">DeLorean de Retour vers le Futur</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Scramjet -->
+                        <div class="vehicle-carousel-card" data-vehicle="scramjet">
+                            <div class="vehicle-badge fun">FUN MAX</div>
+                            <div class="vehicle-image-big">🛸</div>
+                            <h3 class="vehicle-name">Scramjet</h3>
+                            <div class="vehicle-price-display">4,000,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 180+ mph</span>
+                                <span class="feature-badge"><span class="icon">🔥</span> Boost fou</span>
+                                <span class="feature-badge"><span class="icon">🚀</span> Saut</span>
+                            </div>
+                            <p class="vehicle-tagline">Le véhicule le plus fun du jeu</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Terrorbyte -->
+                        <div class="vehicle-carousel-card" data-vehicle="terrorbyte">
+                            <div class="vehicle-badge essential">ESSENTIEL</div>
+                            <div class="vehicle-image-big">🚛</div>
+                            <h3 class="vehicle-name">Terrorbyte</h3>
+                            <div class="vehicle-price-display">1,375,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">🔧</span> Workshop</span>
+                                <span class="feature-badge"><span class="icon">🎯</span> Missions</span>
+                                <span class="feature-badge"><span class="icon">🛡️</span> Blindé</span>
+                            </div>
+                            <p class="vehicle-tagline">Base mobile + Workshop MkII</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+
+                        <!-- Hakuchou Drag -->
+                        <div class="vehicle-carousel-card" data-vehicle="hakuchou">
+                            <div class="vehicle-badge speed">VITESSE</div>
+                            <div class="vehicle-image-big">🏍️</div>
+                            <h3 class="vehicle-name">Hakuchou Drag</h3>
+                            <div class="vehicle-price-display">976,000 GTA$</div>
+                            <div class="vehicle-features">
+                                <span class="feature-badge"><span class="icon">⚡</span> 134 mph</span>
+                                <span class="feature-badge"><span class="icon">🏁</span> Rapide</span>
+                                <span class="feature-badge"><span class="icon">💰</span> Abordable</span>
+                            </div>
+                            <p class="vehicle-tagline">Moto la plus rapide du jeu</p>
+                            <button class="btn-details">DÉTAILS</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav next-vehicle" id="nextVehicle">›</button>
+            </div>
+
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+    </section>
+        <div class="container">
+            <h2 class="section-title">Top 4 Prioritaires</h2>
+            <p class="section-subtitle">Les véhicules à acheter en premier</p>
+
+            <div class="essentials-grid">
+                <!-- Oppressor MkII -->
+                <div class="essential-card priority">
+                    <div class="essential-badge">PRIORITÉ #1</div>
+                    <div class="vehicle-image-big">🏍️</div>
+                    <h3>Oppressor Mk II</h3>
+                    <div class="vehicle-price-big">8,000,000 GTA$</div>
+                    <div class="vehicle-role">Mobilité & Grind</div>
+                    <p class="vehicle-desc-short">
+                        LA moto volante incontournable. Mobilité x10, parfaite pour toutes les missions.
+                    </p>
+                    <div class="vehicle-quick-stats">
+                        <span class="stat-pill">130 mph</span>
+                        <span class="stat-pill">Missiles</span>
+                        <span class="stat-pill">Vol</span>
+                    </div>
+                </div>
+
+                <!-- Toreador -->
+                <div class="essential-card priority">
+                    <div class="essential-badge">PRIORITÉ #2</div>
+                    <div class="vehicle-image-big">🚗</div>
+                    <h3>Toreador</h3>
+                    <div class="vehicle-price-big">3,660,000 GTA$</div>
+                    <div class="vehicle-role">Combat & Polyvalence</div>
+                    <p class="vehicle-desc-short">
+                        Voiture amphibie, boost infini, missiles illimités. Le fun et l'efficacité réunis.
+                    </p>
+                    <div class="vehicle-quick-stats">
+                        <span class="stat-pill">135 mph</span>
+                        <span class="stat-pill">Boost ∞</span>
+                        <span class="stat-pill">Amphibie</span>
+                    </div>
+                </div>
+
+                <!-- Sparrow -->
+                <div class="essential-card">
+                    <div class="essential-badge">UTILITAIRE</div>
+                    <div class="vehicle-image-big">🚁</div>
+                    <h3>Sparrow</h3>
+                    <div class="vehicle-price-big">1,815,000 GTA$</div>
+                    <div class="vehicle-role">Hélico Rapide</div>
+                    <p class="vehicle-desc-short">
+                        Hélicoptère ultra-rapide du Kosatka. Spawn instantané, parfait pour Cayo.
+                    </p>
+                    <div class="vehicle-quick-stats">
+                        <span class="stat-pill">168 mph</span>
+                        <span class="stat-pill">Spawn ⚡</span>
+                        <span class="stat-pill">Missiles</span>
+                    </div>
+                </div>
+
+                <!-- Kuruma -->
+                <div class="essential-card">
+                    <div class="essential-badge">BUDGET</div>
+                    <div class="vehicle-image-big">🚙</div>
+                    <h3>Kuruma Blindée</h3>
+                    <div class="vehicle-price-big">525,000 GTA$</div>
+                    <div class="vehicle-role">Protection PvE</div>
+                    <p class="vehicle-desc-short">
+                        Protection totale contre IA. Budget-friendly, parfait pour missions solo.
+                    </p>
+                    <div class="vehicle-quick-stats">
+                        <span class="stat-pill">109 mph</span>
+                        <span class="stat-pill">Blindage 100%</span>
+                        <span class="stat-pill">Drive-by</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Selector -->
+    <section id="catalog" class="catalog-section">
+        <div class="container">
+            <h2 class="section-title">Catalogue Complet</h2>
+            <p class="section-subtitle">Les 10 véhicules essentiels</p>
+
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="super">🏎️ Supercars</button>
+                <button class="tab-btn" data-category="weaponized">🚀 Armés</button>
+                <button class="tab-btn" data-category="aircraft">✈️ Aériens</button>
+                <button class="tab-btn" data-category="special">⚡ Spéciaux</button>
+                <button class="tab-btn" data-category="utility">🛠️ Utilitaires</button>
+            </div>
+
+            <!-- Supercars -->
+            <div class="category-content active" data-category="super">
+                <h3 class="category-title">Supercars</h3>
+                <div class="vehicles-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🏎️</div>
+                        <h4>Krieger</h4>
+                        <div class="vehicle-price">2,875,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 127.25 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 97%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Freinage</span>
+                                <div class="bar"><div class="fill" style="width: 93%"></div></div>
+                                <span class="rating">Excellent</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">⭐ Meilleure supercar pour courses. Downforce excellente, adhérence parfaite. Top 1 absolu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weaponized -->
+            <div class="category-content" data-category="weaponized">
+                <h3 class="category-title">Véhicules Armés</h3>
+                <div class="vehicles-grid">
+                    <div class="vehicle-card featured">
+                        <div class="vehicle-img-placeholder">🏍️</div>
+                        <h4>Oppressor Mk II</h4>
+                        <div class="vehicle-price">8,000,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 130 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 92%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Maniabilité</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Puissance feu</span>
+                                <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                        </div>
+                        <div class="weapon-list">
+                            <span class="weapon-badge">Missiles précis</span>
+                            <span class="weapon-badge">MG</span>
+                            <span class="weapon-badge">Vol/Boost</span>
+                        </div>
+                        <p class="vehicle-note">⭐ LE véhicule #1 absolu. Mobilité ultime, missiles parfaits. Indispensable pour grind.</p>
+                    </div>
+
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚗</div>
+                        <h4>Toreador</h4>
+                        <div class="vehicle-price">3,660,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 135 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 88%"></div></div>
+                                <span class="rating">Très bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 96%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 90%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Puissance feu</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                        </div>
+                        <div class="weapon-list">
+                            <span class="weapon-badge">Missiles ∞</span>
+                            <span class="weapon-badge">Boost ∞</span>
+                            <span class="weapon-badge">Amphibie</span>
+                        </div>
+                        <p class="vehicle-note">💎 Polyvalent ultime. Missiles illimités + boost infini + amphibie. Fun garanti.</p>
+                    </div>
+
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚙</div>
+                        <h4>Kuruma Blindée</h4>
+                        <div class="vehicle-price">525,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 109 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 70%"></div></div>
+                                <span class="rating">Moyenne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 78%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Protection</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                        </div>
+                        <div class="weapon-list">
+                            <span class="weapon-badge">Blindage 100%</span>
+                            <span class="weapon-badge">Drive-by</span>
+                        </div>
+                        <p class="vehicle-note">💰 Budget king. Protection totale PvE, parfait missions solo. Meilleur rapport qualité/prix.</p>
+                    </div>
+
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚗</div>
+                        <h4>Vigilante</h4>
+                        <div class="vehicle-price">3,750,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 147 mph (boost)</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                                <span class="rating">Moyenne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Puissance feu</span>
+                                <div class="bar"><div class="fill" style="width: 92%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                        </div>
+                        <div class="weapon-list">
+                            <span class="weapon-badge">Missiles</span>
+                            <span class="weapon-badge">Boost ∞</span>
+                        </div>
+                        <p class="vehicle-note">🦇 Batmobile. Boost infini incroyable. Excellent pour heists et missions rapides.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aircraft -->
+            <div class="category-content" data-category="aircraft">
+                <h3 class="category-title">Véhicules Aériens</h3>
+                <div class="vehicles-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚁</div>
+                        <h4>Sparrow</h4>
+                        <div class="vehicle-price">1,815,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 168 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 93%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Maniabilité</span>
+                                <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Solidité</span>
+                                <div class="bar"><div class="fill" style="width: 40%"></div></div>
+                                <span class="rating">Fragile</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">⚡ Hélico ultra-rapide. Spawn instantané Kosatka. Parfait Cayo Perico. Essentiel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special -->
+            <div class="category-content" data-category="special">
+                <h3 class="category-title">Véhicules Spéciaux</h3>
+                <div class="vehicles-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚗</div>
+                        <h4>Deluxo</h4>
+                        <div class="vehicle-price">4,721,500 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 127 mph (vol: 80 mph)</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse (route)</span>
+                                <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Vitesse (vol)</span>
+                                <div class="bar"><div class="fill" style="width: 55%"></div></div>
+                                <span class="rating">Lente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Maniabilité</span>
+                                <div class="bar"><div class="fill" style="width: 78%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Puissance feu</span>
+                                <div class="bar"><div class="fill" style="width: 92%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">🎬 DeLorean iconique de Retour vers le Futur. Vol + missiles. Lent mais culte et fun.</p>
+                    </div>
+
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🛸</div>
+                        <h4>Scramjet</h4>
+                        <div class="vehicle-price">4,000,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 137 mph (boost: 180+ mph)</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Folle</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Folle</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 35%"></div></div>
+                                <span class="rating">Catastrophique</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Fun</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Maximum</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">🚀 Boost insane + saut spatial. Le véhicule le plus fun du jeu. Incontrôlable mais hilarant!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Utility -->
+            <div class="category-content" data-category="utility">
+                <h3 class="category-title">Véhicules Utilitaires</h3>
+                <div class="vehicles-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🚛</div>
+                        <h4>Terrorbyte</h4>
+                        <div class="vehicle-price">1,375,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 75 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 50%"></div></div>
+                                <span class="rating">Lent</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Blindage</span>
+                                <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                                <span class="rating">Excellent</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Utilité</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Maximum</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Puissance feu</span>
+                                <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">🎯 Base mobile essentielle. Workshop Oppressor MkII. Missions Client. Indispensable.</p>
+                    </div>
+
+                    <div class="vehicle-card">
+                        <div class="vehicle-img-placeholder">🏍️</div>
+                        <h4>Hakuchou Drag</h4>
+                        <div class="vehicle-price">976,000 GTA$</div>
+                        <div class="vehicle-top-speed">Vitesse max: 134 mph</div>
+                        <div class="vehicle-stats-mini">
+                            <div class="stat-bar">
+                                <span class="label">Vitesse</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Accélération</span>
+                                <div class="bar"><div class="fill" style="width: 100%"></div></div>
+                                <span class="rating">Excellente</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Tenue de route</span>
+                                <div class="bar"><div class="fill" style="width: 70%"></div></div>
+                                <span class="rating">Bonne</span>
+                            </div>
+                            <div class="stat-bar">
+                                <span class="label">Prix/Perf</span>
+                                <div class="bar"><div class="fill" style="width: 98%"></div></div>
+                                <span class="rating">Excellent</span>
+                            </div>
+                        </div>
+                        <p class="vehicle-note">🏁 Moto la plus rapide du jeu. Budget-friendly. Parfaite pour courses et déplacements rapides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progression Timeline -->
+    <section class="vehicle-progression">
+        <div class="container">
+            <h2 class="section-title">Ordre d'Achat Recommandé</h2>
+            <p class="section-subtitle">Construisez votre garage dans le bon ordre</p>
+
+            <div class="garage-timeline">
+                <div class="garage-phase">
+                    <div class="phase-icon">🎯</div>
+                    <h3>Phase 1: Budget (0-5M)</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <span class="v-name">🚙 Kuruma Blindée</span>
+                            <span class="v-price">0.5M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🏍️ Hakuchou Drag</span>
+                            <span class="v-price">1.0M</span>
+                        </div>
+                    </div>
+                    <p class="phase-goal">🎯 Objectif: Protection PvE + Mobilité basique</p>
+                </div>
+
+                <div class="garage-phase">
+                    <div class="phase-icon">💎</div>
+                    <h3>Phase 2: Essentiels (5-15M)</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <span class="v-name">🚁 Sparrow</span>
+                            <span class="v-price">1.8M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🚗 Toreador</span>
+                            <span class="v-price">3.7M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🏎️ Krieger</span>
+                            <span class="v-price">2.9M</span>
+                        </div>
+                    </div>
+                    <p class="phase-goal">🎯 Objectif: Polyvalence maximale</p>
+                </div>
+
+                <div class="garage-phase">
+                    <div class="phase-icon">🚀</div>
+                    <h3>Phase 3: Premium (15-30M)</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <span class="v-name">🏍️ Oppressor Mk II</span>
+                            <span class="v-price">8.0M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🚛 Terrorbyte</span>
+                            <span class="v-price">1.4M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🚗 Vigilante</span>
+                            <span class="v-price">3.8M</span>
+                        </div>
+                    </div>
+                    <p class="phase-goal">🎯 Objectif: Grind optimal + Workshop</p>
+                </div>
+
+                <div class="garage-phase">
+                    <div class="phase-icon">🏆</div>
+                    <h3>Phase 4: Fun (30M+)</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <span class="v-name">🚗 Deluxo</span>
+                            <span class="v-price">4.7M</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <span class="v-name">🛸 Scramjet</span>
+                            <span class="v-price">4.0M</span>
+                        </div>
+                    </div>
+                    <p class="phase-goal">🎯 Objectif: Collection & Plaisir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Tableau Comparatif</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Véhicule</th>
+                            <th>Prix</th>
+                            <th>Vitesse Max</th>
+                            <th>Type</th>
+                            <th>Utilité</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td><strong>Oppressor Mk II</strong></td>
+                            <td>8.0M</td>
+                            <td class="profit-high">130 mph</td>
+                            <td>Moto volante</td>
+                            <td>Grind optimal</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Toreador</strong></td>
+                            <td>3.7M</td>
+                            <td class="profit-high">135 mph</td>
+                            <td>Voiture amphibie</td>
+                            <td>Combat + Fun</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Krieger</strong></td>
+                            <td>2.9M</td>
+                            <td class="profit-high">127 mph</td>
+                            <td>Supercar</td>
+                            <td>Courses</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vigilante</strong></td>
+                            <td>3.8M</td>
+                            <td class="profit-very-high">147 mph</td>
+                            <td>Super boost</td>
+                            <td>Heists rapides</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deluxo</strong></td>
+                            <td>4.7M</td>
+                            <td class="profit-medium">127 mph</td>
+                            <td>Voiture volante</td>
+                            <td>Fun + collection</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scramjet</strong></td>
+                            <td>4.0M</td>
+                            <td class="profit-very-high">180+ mph</td>
+                            <td>Super boost</td>
+                            <td>Fun maximum</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sparrow</strong></td>
+                            <td>1.8M</td>
+                            <td class="profit-high">168 mph</td>
+                            <td>Hélico</td>
+                            <td>Cayo Perico</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Terrorbyte</strong></td>
+                            <td>1.4M</td>
+                            <td class="profit-low">75 mph</td>
+                            <td>Base mobile</td>
+                            <td>Workshop MkII</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hakuchou Drag</strong></td>
+                            <td>1.0M</td>
+                            <td class="profit-high">134 mph</td>
+                            <td>Moto</td>
+                            <td>Budget rapide</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Kuruma Blindée</strong></td>
+                            <td>0.5M</td>
+                            <td class="profit-medium">109 mph</td>
+                            <td>Voiture blindée</td>
+                            <td>Protection PvE</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">
+                💡 <strong>Note:</strong> Classement par prix. Tous ces véhicules sont essentiels pour différentes situations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-vehicles">
+        <div class="container">
+            <h2 class="section-title">Pro Tips Véhicules</h2>
+            <div class="tips-grid">
+                <div class="tip-card-vehicles">
+                    <div class="tip-icon">🏍️</div>
+                    <h3>Oppressor Mk II</h3>
+                    <ul>
+                        <li>Nécessite Terrorbyte pour upgrades</li>
+                        <li>Nightclub requis pour Terrorbyte</li>
+                        <li>Missiles > MG pour missions</li>
+                        <li>Parfait pour Cayo Perico prep</li>
+                        <li>Vol illimité = mobilité ultime</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card-vehicles">
+                    <div class="tip-icon">💎</div>
+                    <h3>Toreador</h3>
+                    <ul>
+                        <li>Boost infini rechargeable</li>
+                        <li>20 missiles (illimités après restock)</li>
+                        <li>Mode sous-marin pour évasion</li>
+                        <li>Stockable dans Kosatka</li>
+                        <li>Parfait pour Cayo finale</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card-vehicles">
+                    <div class="tip-icon">🚁</div>
+                    <h3>Sparrow</h3>
+                    <ul>
+                        <li>Spawn instantané depuis Kosatka</li>
+                        <li>Fragile mais ultra-rapide</li>
+                        <li>Missiles optionnels (50K)</li>
+                        <li>Essentiel pour prep Cayo</li>
+                        <li>Éviter combat prolongé</li>
+                    </ul>
+                </div>
+
+                <div class="tip-card-vehicles">
+                    <div class="tip-icon">💰</div>
+                    <h3>Économiser</h3>
+                    <ul>
+                        <li>Attendez événements -30%</li>
+                        <li>Podium casino = gratuit</li>
+                        <li>Twitch Prime = réductions</li>
+                        <li>Kuruma = meilleur budget</li>
+                        <li>Priorisez utilité > style</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à construire votre garage ?</h2>
+            <p>Suivez le guide et roulez avec style</p>
+            <a href="index.html" class="btn btn-large">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-footer">
+                        <span class="gta">GTA</span>
+                        <span class="online">ONLINE</span>
+                    </div>
+                    <p>Guide non-officiel pour les joueurs passionnés</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="gameplay.html">Gameplay</a>
+                        <a href="business.html">Business</a>
+                        <a href="vehicles.html">Véhicules</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="/cdn-cgi/l/email-protection#b6d5d9d8c2d7d5c298d1c2d798c5dfc2d3f6d1dbd7dfda98d5d9db">Email</a>
+                        <a href="contact.html">Nous contacter</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>GTA Online © Rockstar Games - Ce site est un projet de fan non-officiel</p>
+            </div>
+        </div>
+    </footer>
+
+  

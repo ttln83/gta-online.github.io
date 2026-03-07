@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business & Empire - GTA Online Guide</title>
+    <meta name="description" content="Guide complet des business GTA Online : profits, stratégies, ROI et calculateur pour bâtir votre empire criminel">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <span class="gta">GTA</span>
+                <span class="online">ONLINE</span>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="gameplay.html" class="nav-link">Gameplay</a>
+                <a href="business.html" class="nav-link active">Business</a>
+                <a href="vehicles.html" class="nav-link">Véhicules</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-business">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="BUSINESS EMPIRE">BUSINESS EMPIRE</span>
+            </h1>
+            <p class="hero-subtitle">Bâtissez votre empire criminel à Los Santos</p>
+            <div class="hero-stats-mini">
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">💰</span>
+                    <span class="mini-stat-text">7M+ par semaine</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">🏢</span>
+                    <span class="mini-stat-text">8 types de business</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">📈</span>
+                    <span class="mini-stat-text">ROI optimisé</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#calculator" class="btn btn-primary">Calculer profits</a>
+                <a href="#business-grid" class="btn btn-secondary">Explorer</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Quick Stats Overview -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-info">
+                        <h3>Meilleur solo</h3>
+                        <p>Cayo Perico</p>
+                        <span class="stat-value">1.9M / run</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">💎</div>
+                    <div class="stat-info">
+                        <h3>Meilleur passif</h3>
+                        <p>Nightclub</p>
+                        <span class="stat-value">1.69M / jour</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-info">
+                        <h3>Meilleur ROI</h3>
+                        <p>Bunker</p>
+                        <span class="stat-value">1400% profit</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-info">
+                        <h3>Setup rapide</h3>
+                        <p>Agence</p>
+                        <span class="stat-value">15-25 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Grid -->
+    <section id="business-grid" class="business-section">
+        <div class="container">
+            <h2 class="section-title">Catalogue Business</h2>
+            <p class="section-subtitle">Investissez intelligemment pour maximiser vos profits</p>
+
+            <div class="business-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="passive">Passifs</button>
+                <button class="filter-btn" data-filter="active">Actifs</button>
+                <button class="filter-btn" data-filter="high-profit">High Profit</button>
+            </div>
+
+            <div class="business-grid">
+                <!-- Bunker -->
+                <div class="business-card" data-type="manufacturing" data-profit="high">
+                    <div class="business-badge">HIGH ROI</div>
+                    <div class="business-icon">🎖️</div>
+                    <h3>Bunker</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût total:</span>
+                        <span class="price-value">2.9M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-high">1.05M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Temps prod:</span>
+                            <span class="value">11h 40min</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Actif</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Fabriquez et vendez des armes. Meilleur business actif pour le ROI.
+                    </div>
+                    <button class="btn-business-details" data-business="bunker">Voir détails</button>
+                </div>
+
+                <!-- Nightclub -->
+                <div class="business-card" data-type="passive" data-profit="very-high">
+                    <div class="business-badge best">MEILLEUR PASSIF</div>
+                    <div class="business-icon">🎵</div>
+                    <h3>Nightclub</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût total:</span>
+                        <span class="price-value">2.8M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-very-high">1.69M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Temps prod:</span>
+                            <span class="value">24h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Passif</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Revenus automatiques de tous vos business. Investissement #1 long terme.
+                    </div>
+                    <button class="btn-business-details" data-business="nightclub">Voir détails</button>
+                </div>
+
+                <!-- Agence -->
+                <div class="business-card" data-type="contracts" data-profit="medium">
+                    <div class="business-badge">RAPIDE</div>
+                    <div class="business-icon">🕴️</div>
+                    <h3>Agence</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût total:</span>
+                        <span class="price-value">2.7M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit/contrat:</span>
+                            <span class="value profit-medium">75K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Durée:</span>
+                            <span class="value">15-25min</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Actif</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Contrats VIP + safe passif (20K/jour). Parfait pour revenus réguliers.
+                    </div>
+                    <button class="btn-business-details" data-business="agency">Voir détails</button>
+                </div>
+
+                <!-- MC Cocaïne -->
+                <div class="business-card" data-type="mc-business" data-profit="high">
+                    <div class="business-badge">MC BEST</div>
+                    <div class="business-icon">💊</div>
+                    <h3>Labo Cocaïne</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût total:</span>
+                        <span class="price-value">2.5M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-high">420K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Temps prod:</span>
+                            <span class="value">5h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Actif</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Business MC le plus rentable. Essentiel pour le Nightclub.
+                    </div>
+                    <button class="btn-business-details" data-business="cocaine">Voir détails</button>
+                </div>
+
+                <!-- Kosatka / Cayo Perico -->
+                <div class="business-card" data-type="heist" data-profit="very-high">
+                    <div class="business-badge best">BEST SOLO</div>
+                    <div class="business-icon">🚢</div>
+                    <h3>Kosatka (Cayo Perico)</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût:</span>
+                        <span class="price-value">2.2M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit/run:</span>
+                            <span class="value profit-very-high">1.9M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Durée:</span>
+                            <span class="value">60-90min</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Braquage</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Braquage solo le plus rentable. Investment prioritaire #1.
+                    </div>
+                    <button class="btn-business-details" data-business="kosatka">Voir détails</button>
+                </div>
+
+                <!-- Arcade (Casino Heist) -->
+                <div class="business-card" data-type="heist" data-profit="very-high">
+                    <div class="business-badge">4 JOUEURS</div>
+                    <div class="business-icon">🎰</div>
+                    <h3>Arcade (Casino)</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût total:</span>
+                        <span class="price-value">2.5M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-very-high">3.6M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Durée:</span>
+                            <span class="value">90-120min</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Braquage</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Braquage en équipe ultra-rentable. 3 approches différentes.
+                    </div>
+                    <button class="btn-business-details" data-business="arcade">Voir détails</button>
+                </div>
+
+                <!-- Hangar -->
+                <div class="business-card" data-type="cargo" data-profit="low">
+                    <div class="business-badge">COLLECTION</div>
+                    <div class="business-icon">✈️</div>
+                    <h3>Hangar</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût:</span>
+                        <span class="price-value">1.2M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-low">850K</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Temps:</span>
+                            <span class="value">10-20h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Cargo</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Pour collectionneurs d'avions. ROI faible mais fun.
+                    </div>
+                    <button class="btn-business-details" data-business="hangar">Voir détails</button>
+                </div>
+
+                <!-- CEO Cargo -->
+                <div class="business-card" data-type="cargo" data-profit="medium">
+                    <div class="business-badge">GRIND</div>
+                    <div class="business-icon">📦</div>
+                    <h3>Entrepôt CEO</h3>
+                    <div class="business-price">
+                        <span class="price-label">Coût:</span>
+                        <span class="price-value">1.9M GTA$</span>
+                    </div>
+                    <div class="business-stats">
+                        <div class="stat-item">
+                            <span class="label">Profit max:</span>
+                            <span class="value profit-medium">2.2M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Temps:</span>
+                            <span class="value">5-8h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Type:</span>
+                            <span class="value">Cargo</span>
+                        </div>
+                    </div>
+                    <div class="business-description">
+                        Cargaison spéciale. Bon profit mais très répétitif.
+                    </div>
+                    <button class="btn-business-details" data-business="ceo-cargo">Voir détails</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profit Calculator -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">💰 Calculateur de Profits</h2>
+            <p class="section-subtitle">Calculez vos revenus hebdomadaires en temps réel</p>
+
+            <div class="calc-simple-grid">
+                <!-- LEFT: Settings -->
+                <div class="calc-settings">
+                    <!-- Hours Slider -->
+                    <div class="calc-box">
+                        <h3>⏱️ Heures de jeu par semaine</h3>
+                        <div class="hours-display-big">
+                            <span id="simple-hours">10</span>
+                            <span class="unit">heures</span>
+                        </div>
+                        <input type="range" id="simple-slider" min="5" max="50" value="10" step="1" class="range-slider">
+                        <div class="range-labels">
+                            <span>5h</span>
+                            <span>50h</span>
+                        </div>
+                    </div>
+
+                    <!-- Business Selection -->
+                    <div class="calc-box">
+                        <h3>✅ Sélectionnez vos business</h3>
+                        <div class="business-list">
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="150000" checked>
+                                <span>🚢 Kosatka <small>(150K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="50000">
+                                <span>🏢 Agence <small>(50K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="60000">
+                                <span>🎭 Nightclub <small>(60K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="54000">
+                                <span>🔫 Bunker <small>(54K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="45000">
+                                <span>💊 Cocaïne <small>(45K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="80000">
+                                <span>🎮 Arcade <small>(80K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="70000">
+                                <span>📦 CEO Cargo <small>(70K/h)</small></span>
+                            </label>
+                            <label class="biz-checkbox">
+                                <input type="checkbox" class="biz-check" data-rate="55000">
+                                <span>🔧 Auto Shop <small>(55K/h)</small></span>
+                            </label>
+                        </div>
+                        
+                        <!-- BIG CALCULATE BUTTON -->
+                        <button id="calc-button" class="calc-btn-big">
+                            💰 CALCULER MES PROFITS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Results -->
+                <div class="calc-results">
+                    <!-- Main Result -->
+                    <div class="result-box-main">
+                        <h3>💰 Profit Total</h3>
+                        <div class="profit-display">
+                            <span class="dollar">$</span>
+                            <span id="simple-total">1,500,000</span>
+                        </div>
+                        <p class="period">par semaine</p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="result-box-stats">
+                        <div class="stat-row">
+                            <span class="stat-icon">📊</span>
+                            <div class="stat-info">
+                                <span class="stat-num" id="simple-count">1</span>
+                                <span class="stat-text">Business actifs</span>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-icon">💸</span>
+                            <div class="stat-info">
+                                <span class="stat-num" id="simple-hourly">150,000 $</span>
+                                <span class="stat-text">Par heure</span>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-icon">📅</span>
+                            <div class="stat-info">
+                                <span class="stat-num" id="simple-monthly">6,000,000 $</span>
+                                <span class="stat-text">Par mois</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="result-box-tips">
+                        <h4>💡 Conseils</h4>
+                        <ul id="simple-tips">
+                            <li>✅ Kosatka activé - Excellent pour solo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Timeline -->
+    <section class="investment-timeline">
+        <div class="container">
+            <h2 class="section-title">Roadmap d'investissement</h2>
+            <p class="section-subtitle">L'ordre optimal pour bâtir votre empire</p>
+
+            <div class="timeline-invest">
+                <div class="invest-phase">
+                    <div class="phase-number">1</div>
+                    <div class="phase-content">
+                        <h3>Phase Starter (0-5M)</h3>
+                        <div class="phase-invest">
+                            <div class="invest-item">
+                                <span class="invest-name">🚢 Kosatka</span>
+                                <span class="invest-cost">2.2M</span>
+                            </div>
+                            <p class="phase-strategy">
+                                <strong>Stratégie:</strong> Grind Cayo Perico en solo jusqu'à 5M de capital.
+                                1-2 runs par jour = 3-4M par semaine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invest-phase">
+                    <div class="phase-number">2</div>
+                    <div class="phase-content">
+                        <h3>Phase Growth (5-15M)</h3>
+                        <div class="phase-invest">
+                            <div class="invest-item">
+                                <span class="invest-name">🕴️ Agence + upgrades</span>
+                                <span class="invest-cost">2.7M</span>
+                            </div>
+                            <div class="invest-item">
+                                <span class="invest-name">🏎️ Oppressor Mk II</span>
+                                <span class="invest-cost">3M</span>
+                            </div>
+                            <p class="phase-strategy">
+                                <strong>Stratégie:</strong> Alterner Cayo + Contrats Agence.
+                                Oppressor pour mobilité x10. Gain: ~5M/semaine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invest-phase">
+                    <div class="phase-number">3</div>
+                    <div class="phase-content">
+                        <h3>Phase Empire (15-30M)</h3>
+                        <div class="phase-invest">
+                            <div class="invest-item">
+                                <span class="invest-name">🎵 Nightclub + upgrades</span>
+                                <span class="invest-cost">2.8M</span>
+                            </div>
+                            <div class="invest-item">
+                                <span class="invest-name">🎖️ Bunker + upgrades</span>
+                                <span class="invest-cost">2.9M</span>
+                            </div>
+                            <div class="invest-item">
+                                <span class="invest-name">💊 MC Cocaïne</span>
+                                <span class="invest-cost">2.5M</span>
+                            </div>
+                            <p class="phase-strategy">
+                                <strong>Stratégie:</strong> Activer revenus passifs. Nightclub accumule pendant vos Cayo.
+                                Bunker en arrière-plan. Gain: ~7M/semaine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invest-phase">
+                    <div class="phase-number">4</div>
+                    <div class="phase-content">
+                        <h3>Phase Kingpin (30M+)</h3>
+                        <div class="phase-invest">
+                            <div class="invest-item">
+                                <span class="invest-name">🎰 Arcade + autres MC</span>
+                                <span class="invest-cost">5M</span>
+                            </div>
+                            <div class="invest-item">
+                                <span class="invest-name">🏢 Propriétés de luxe</span>
+                                <span class="invest-cost">10M+</span>
+                            </div>
+                            <div class="invest-item">
+                                <span class="invest-name">🚗 Collection véhicules</span>
+                                <span class="invest-cost">∞</span>
+                            </div>
+                            <p class="phase-strategy">
+                                <strong>Stratégie:</strong> Portfolio complet. Tous business connectés au Nightclub.
+                                Focus plaisir et collection. Revenus: 10M+/semaine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Tableau Comparatif</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Business</th>
+                            <th>Coût Total</th>
+                            <th>Profit Max</th>
+                            <th>Temps</th>
+                            <th>$/heure</th>
+                            <th>ROI</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td><strong>Cayo Perico</strong></td>
+                            <td>2.2M</td>
+                            <td class="profit-high">1.9M</td>
+                            <td>90min</td>
+                            <td class="profit-very-high">1.27M/h</td>
+                            <td class="roi-high">86%</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bunker</strong></td>
+                            <td>2.9M</td>
+                            <td class="profit-high">1.05M</td>
+                            <td>11h 40m</td>
+                            <td class="profit-medium">90K/h</td>
+                            <td class="roi-high">36%</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td><strong>Nightclub</strong></td>
+                            <td>2.8M</td>
+                            <td class="profit-very-high">1.69M</td>
+                            <td>24h</td>
+                            <td class="profit-medium">70K/h</td>
+                            <td class="roi-high">60%</td>
+                            <td><span class="rating">⭐⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Agence</strong></td>
+                            <td>2.7M</td>
+                            <td class="profit-medium">75K</td>
+                            <td>20min</td>
+                            <td class="profit-medium">225K/h</td>
+                            <td class="roi-medium">3%</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>MC Cocaïne</strong></td>
+                            <td>2.5M</td>
+                            <td class="profit-medium">420K</td>
+                            <td>5h</td>
+                            <td class="profit-medium">84K/h</td>
+                            <td class="roi-medium">17%</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Casino Heist</strong></td>
+                            <td>2.5M</td>
+                            <td class="profit-very-high">3.6M</td>
+                            <td>2h</td>
+                            <td class="profit-very-high">1.8M/h</td>
+                            <td class="roi-very-high">144%</td>
+                            <td><span class="rating">⭐⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CEO Cargo</strong></td>
+                            <td>1.9M</td>
+                            <td class="profit-medium">2.2M</td>
+                            <td>6h</td>
+                            <td class="profit-low">367K/h</td>
+                            <td class="roi-very-high">116%</td>
+                            <td><span class="rating">⭐⭐⭐</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hangar</strong></td>
+                            <td>1.2M</td>
+                            <td class="profit-low">850K</td>
+                            <td>15h</td>
+                            <td class="profit-low">57K/h</td>
+                            <td class="roi-high">71%</td>
+                            <td><span class="rating">⭐⭐</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">
+                💡 <strong>Note:</strong> ROI = (Profit / Coût) × 100. Les temps incluent setup + vente.
+                $/heure calculé sur production pure (passif) ou temps actif total.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-business">
+        <div class="container">
+            <h2 class="section-title">Stratégies Avancées</h2>
+            <div class="tips-grid">
+                <div class="tip-card-business">
+                    <div class="tip-icon">🔄</div>
+                    <h3>Rotation optimale</h3>
+                    <p>
+                        <strong>Routine 4h de jeu:</strong><br>
+                        1. Lancer Bunker + Nightclub<br>
+                        2. Cayo Perico × 2 (3h)<br>
+                        3. Contrats Agence × 3 (1h)<br>
+                        4. Vendre Bunker si plein<br>
+                        <br>
+                        💰 Résultat: 4-5M en 4h
+                    </p>
+                </div>
+
+                <div class="tip-card-business">
+                    <div class="tip-icon">📊</div>
+                    <h3>Gestion stocks</h3>
+                    <p>
+                        <strong>Ne jamais sur-stocker:</strong><br>
+                        • Bunker: Vendre à 175K (1 véhicule solo)<br>
+                        • Nightclub: Vendre tous les 2-3 jours<br>
+                        • MC: Éviter stocks pleins (raids)<br>
+                        <br>
+                        ⚡ Efficacité > Quantité
+                    </p>
+                </div>
+
+                <div class="tip-card-business">
+                    <div class="tip-icon">🎯</div>
+                    <h3>Session publique solo</h3>
+                    <p>
+                        <strong>Bonus sans risque:</strong><br>
+                        • Test NAT (Xbox/PC)<br>
+                        • MTU 800 (PS4/PS5)<br>
+                        • +25% bonus vente publique<br>
+                        • Zéro griefers<br>
+                        <br>
+                        🛡️ Profits sécurisés
+                    </p>
+                </div>
+
+                <div class="tip-card-business">
+                    <div class="tip-icon">💎</div>
+                    <h3>Upgrades prioritaires</h3>
+                    <p>
+                        <strong>Ordre d'achat:</strong><br>
+                        1. Équipement (vitesse x2)<br>
+                        2. Personnel (qualité produits)<br>
+                        3. Sécurité (moins de raids)<br>
+                        <br>
+                        ❌ JAMAIS sans upgrades Equipment + Staff
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à devenir millionnaire ?</h2>
+            <p>Suivez le guide et bâtissez votre empire criminel</p>
+            <a href="index.html" class="btn btn-large">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Modal Business Details -->
+    <div class="modal" id="business-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 class="modal-title">Chargement...</h2>
+                <div class="modal-details"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-footer">
+                        <span class="gta">GTA</span>
+                        <span class="online">ONLINE</span>
+                    </div>
+                    <p>Guide non-officiel pour les joueurs passionnés</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="gameplay.html">Gameplay</a>
+                        <a href="business.html">Business</a>
+                        <a href="vehicles.html">Véhicules</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="/cdn-cgi/l/email-protection#7e1d11100a1f1d0a50190a1f500d170a1b3e19131f1712501d1113">Email</a>
+                        <a href="contact.html">Nous contacter</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>GTA Online © Rockstar Games - Ce site est un projet de fan non-officiel</p>
+            </div>
+        </div>
+    </footer>
+
+    <sc

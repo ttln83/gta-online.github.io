@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST - GTA Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="padding: 50px; background: #0a0e1a;">
+    
+    <h1 style="color: #00ff99; font-family: Arial; text-align: center;">🔧 TEST GTA SITE</h1>
+    
+    <!-- TEST 1: Calculateur -->
+    <div style="background: #1a1f2e; padding: 30px; margin: 30px auto; max-width: 800px; border: 2px solid #00ff99; border-radius: 15px;">
+        <h2 style="color: #00d9ff; font-family: Arial;">TEST 1: Calculateur</h2>
+        
+        <div>
+            <p style="color: white;">Heures: <span id="simple-hours" style="color: #00ff99; font-size: 2rem; font-weight: bold;">10</span>h</p>
+            <input type="range" id="simple-slider" min="5" max="50" value="10" step="1" 
+                   style="width: 100%; height: 10px; background: #00d9ff; border-radius: 5px;">
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <label style="color: white; display: block; margin: 10px 0;">
+                <input type="checkbox" class="biz-check" data-rate="150000" checked>
+                <span style="margin-left: 10px;">🚢 Kosatka (150K/h)</span>
+            </label>
+            
+            <label style="color: white; display: block; margin: 10px 0;">
+                <input type="checkbox" class="biz-check" data-rate="60000">
+                <span style="margin-left: 10px;">🎭 Nightclub (60K/h)</span>
+            </label>
+            
+            <button id="calc-button" style="width: 100%; padding: 15px; margin-top: 20px; background: linear-gradient(135deg, #00ff99, #00d9ff); border: none; border-radius: 10px; font-size: 1.5rem; font-weight: bold; color: #0a0e1a; cursor: pointer;">
+                💰 CALCULER
+            </button>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #00ff9920; border: 2px solid #00ff99; border-radius: 10px; text-align: center;">
+            <h3 style="color: #00ff99; margin: 0;">TOTAL:</h3>
+            <p style="color: #00ff99; font-size: 3rem; margin: 10px 0; font-weight: bold;" id="simple-total">1,500,000</p>
+            <p style="color: #aaa;">$ par semaine</p>
+        </div>
+        
+        <p id="test-status-calc" style="margin-top: 20px; padding: 15px; background: #ff006e20; border-left: 4px solid #ff006e; color: white;">
+            ⏳ Ajuste les paramètres puis clique CALCULER
+        </p>
+    </div>
+    
+    <!-- TEST 2: Modal -->
+    <div style="background: #1a1f2e; padding: 30px; margin: 30px auto; max-width: 800px; border: 2px solid #00ff99; border-radius: 15px;">
+        <h2 style="color: #00d9ff; font-family: Arial;">TEST 2: Modal Détails</h2>
+        
+        <button data-vehicle="oppressor" class="btn-details" 
+                style="padding: 15px 40px; background: #00ff99; color: #0a0e1a; border: none; border-radius: 10px; font-size: 1.2rem; cursor: pointer; font-weight: bold;">
+            🏍️ Ouvrir Modal Oppressor
+        </button>
+        
+        <p id="test-status-modal" style="margin-top: 20px; padding: 15px; background: #ff006e20; border-left: 4px solid #ff006e; color: white;">
+            ⏳ En attente du test...
+        </p>
+    </div>
+    
+    <!-- TEST 3: Scripts chargés -->
+    <div style="background: #1a1f2e; padding: 30px; margin: 30px auto; max-width: 800px; border: 2px solid #00ff99; border-radius: 15px;">
+        <h2 style="color: #00d9ff; font-family: Arial;">TEST 3: Vérification Scripts</h2>
+        <div id="script-check" style="color: white;"></div>
+    </div>
+
+    <script src="app.js"></script>
+    
+    <script>
+        // Vérification automatique
+        setTimeout(() => {
+            const scriptCheck = document.getElementById('script-check');
+            let checks = [];
+            
+            // Check 1: app.js chargé
+            checks.push(typeof simpleCalculate !== 'undefined' ? 
+                '✅ app.js chargé' : '❌ app.js NON chargé');
+            
+            // Check 2: Calculateur
+            const slider = document.getElementById('simple-slider');
+            const total = document.getElementById('simple-total');
+            checks.push(slider ? '✅ Slider trouvé' : '❌ Slider NON trouvé');
+            checks.push(total ? '✅ Total trouvé' : '❌ Total NON trouvé');
+            
+            // Check 3: Modal
+            const modal = document.getElementById('detailsModal');
+            checks.push(modal ? '✅ Modal créé' : '❌ Modal NON créé');
+            
+            scriptCheck.innerHTML = checks.map(c => `<p style="margin: 10px 0;">${c}</p>`).join('');
+            
+            // Test slider
+            if (slider) {
+                slider.addEventListener('input', () => {
+                    document.getElementById('test-status-calc').innerHTML = 
+                        '✅ Slider OK ! Valeur: ' + slider.value + 'h - Maintenant clique CALCULER';
+                    document.getElementById('test-status-calc').style.background = '#00d9ff20';
+                    document.getElementById('test-status-calc').style.borderColor = '#00d9ff';
+                });
+            }
+            
+            // Test bouton calculer
+            const calcBtn = document.getElementById('calc-button');
+            if (calcBtn) {
+                calcBtn.addEventListener('click', () => {
+                    document.getElementById('test-status-calc').innerHTML = 
+                        '✅ CALCULATEUR FONCTIONNE ! Résultat affiché !';
+                    document.getElementById('test-status-calc').style.background = '#00ff9920';
+                    document.getElementById('test-status-calc').style.borderColor = '#00ff99';
+                });
+            }
+            
+            // Test modal
+            document.querySelectorAll('.btn-details').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.getElementById('test-status-modal').innerHTML = 
+                        '✅ Bouton modal cliqué !';
+                    document.getElementById('test-status-modal').style.background = '#00ff9920';
+                    document.getElementById('test-status-modal').style.borderColor = '#00ff99';
+                });
+            });
+        }, 1000);
+    </script>
+</body>
+</html>

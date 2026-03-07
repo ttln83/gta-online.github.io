@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Online - Le guide ultime de Los Santos</title>
+    <meta name="description" content="Découvrez le guide complet de GTA Online : missions, business, véhicules et astuces pour dominer Los Santos">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <span class="gta">GTA</span>
+                <span class="online">ONLINE</span>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="gameplay.html" class="nav-link">Gameplay</a>
+                <a href="business.html" class="nav-link">Business</a>
+                <a href="vehicles.html" class="nav-link">Véhicules</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="GTA ONLINE">GTA ONLINE</span>
+            </h1>
+            <p class="hero-subtitle">Le guide ultime de Los Santos</p>
+            <div class="hero-stats-mini">
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">💰</span>
+                    <span class="mini-stat-text">30M+ gains/semaine</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">🎯</span>
+                    <span class="mini-stat-text">150+ missions</span>
+                </div>
+                <div class="mini-stat">
+                    <span class="mini-stat-icon">🏎️</span>
+                    <span class="mini-stat-text">500+ véhicules</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#features" class="btn btn-primary">Explorer</a>
+                <a href="gameplay.html" class="btn btn-secondary">Commencer</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Dominez Los Santos</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card" data-category="missions">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Missions</h3>
+                    <p>Braquages, courses, contrats VIP et missions spéciales pour maximiser vos gains.</p>
+                    <a href="gameplay.html" class="feature-link">Découvrir →</a>
+                </div>
+
+                <div class="feature-card" data-category="business">
+                    <div class="feature-icon">💼</div>
+                    <h3>Business Empire</h3>
+                    <p>Bunkers, nightclubs, agences et trafics pour bâtir votre empire criminel.</p>
+                    <a href="business.html" class="feature-link">Développer →</a>
+                </div>
+
+                <div class="feature-card" data-category="vehicles">
+                    <div class="feature-icon">🏎️</div>
+                    <h3>Véhicules de luxe</h3>
+                    <p>Supercars, jets, yachts et véhicules blindés pour parcourir la ville avec style.</p>
+                    <a href="vehicles.html" class="feature-link">Explorer →</a>
+                </div>
+
+                <div class="feature-card" data-category="properties">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Propriétés</h3>
+                    <p>Penthouse, appartements de luxe et planques stratégiques à travers la map.</p>
+                    <a href="#" class="feature-link">Acheter →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vehicles-showcase">
+        <div class="container">
+            <h2 class="section-title">Véhicules Premium</h2>
+            <p class="section-subtitle">Les machines les plus puissantes de Los Santos</p>
+            
+            <div class="vehicle-carousel">
+                <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+                <div class="carousel-track">
+                    <div class="vehicle-slide active">
+                        <div class="vehicle-card">
+                            <div class="vehicle-badge">TOP PICK</div>
+                            <div class="vehicle-image-placeholder">🏍️</div>
+                            <h3>Oppressor Mk II</h3>
+                            <p class="vehicle-price">2,925,000 GTA$</p>
+                            <div class="vehicle-specs">
+                                <span class="spec">⚡ 130 mph</span>
+                                <span class="spec">🚀 Missiles</span>
+                                <span class="spec">✈️ Vol</span>
+                            </div>
+                            <p class="vehicle-desc">La moto volante incontournable</p>
+                            <button class="btn-details" data-vehicle="oppressor">Détails</button>
+                        </div>
+                    </div>
+                    <div class="vehicle-slide">
+                        <div class="vehicle-card">
+                            <div class="vehicle-badge">NOUVEAU</div>
+                            <div class="vehicle-image-placeholder">🚗</div>
+                            <h3>Pegassi Toreador</h3>
+                            <p class="vehicle-price">3,660,000 GTA$</p>
+                            <div class="vehicle-specs">
+                                <span class="spec">⚡ 135 mph</span>
+                                <span class="spec">🌊 Amphibie</span>
+                                <span class="spec">🚀 Boost ∞</span>
+                            </div>
+                            <p class="vehicle-desc">Voiture sous-marine avec boost illimité</p>
+                            <button class="btn-details" data-vehicle="toreador">Détails</button>
+                        </div>
+                    </div>
+                    <div class="vehicle-slide">
+                        <div class="vehicle-card">
+                            <div class="vehicle-badge">ESSENTIEL</div>
+                            <div class="vehicle-image-placeholder">🚁</div>
+                            <h3>Sparrow</h3>
+                            <p class="vehicle-price">1,815,000 GTA$</p>
+                            <div class="vehicle-specs">
+                                <span class="spec">⚡ 168 mph</span>
+                                <span class="spec">🚀 Missiles</span>
+                                <span class="spec">📍 Spawn rapide</span>
+                            </div>
+                            <p class="vehicle-desc">Hélico ultra-rapide du Kosatka</p>
+                            <button class="btn-details" data-vehicle="sparrow">Détails</button>
+                        </div>
+                    </div>
+                    <div class="vehicle-slide">
+                        <div class="vehicle-card">
+                            <div class="vehicle-badge">BASE</div>
+                            <div class="vehicle-image-placeholder">🚢</div>
+                            <h3>Kosatka</h3>
+                            <p class="vehicle-price">2,200,000 GTA$</p>
+                            <div class="vehicle-specs">
+                                <span class="spec">🌊 Sous-marin</span>
+                                <span class="spec">🎯 Cayo Perico</span>
+                                <span class="spec">🚁 Héliport</span>
+                            </div>
+                            <p class="vehicle-desc">Votre QG mobile pour braquages</p>
+                            <button class="btn-details" data-vehicle="kosatka">Détails</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Suivant">›</button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <section class="missions-timeline">
+        <div class="container">
+            <h2 class="section-title">Roadmap du succès</h2>
+            <p class="section-subtitle">Suivez ce chemin pour devenir millionnaire</p>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-level="débutant">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Phase Débutant</h3>
+                        <span class="timeline-budget">Budget: 0 - 5M GTA$</span>
+                        <ul>
+                            <li>✅ Compléter missions contact (Lamar, Simeon)</li>
+                            <li>✅ Économiser pour le Kosatka (2.2M)</li>
+                            <li>✅ Apprendre Cayo Perico en solo</li>
+                            <li>💰 Gain: ~1.5M par braquage</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-level="intermédiaire">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Phase Expansion</h3>
+                        <span class="timeline-budget">Budget: 5M - 20M GTA$</span>
+                        <ul>
+                            <li>✅ Acheter Agence (2M) pour contrats VIP</li>
+                            <li>✅ Oppressor Mk II (3M) pour mobilité</li>
+                            <li>✅ Nightclub (1M) + upgrades (1.7M)</li>
+                            <li>💰 Gain: ~4M par semaine</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-level="avancé">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Phase Empire</h3>
+                        <span class="timeline-budget">Budget: 20M+ GTA$</span>
+                        <ul>
+                            <li>✅ Bunker full upgrade (2.9M)</li>
+                            <li>✅ MC Business → Nightclub</li>
+                            <li>✅ Collection véhicules premium</li>
+                            <li>💰 Gain: ~7M+ par semaine</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-level="expert">
+                    <div class="timeline-marker">👑</div>
+                    <div class="timeline-content">
+                        <h3>Kingpin de Los Santos</h3>
+                        <span class="timeline-budget">Budget: 100M+ GTA$</span>
+                        <ul>
+                            <li>✅ Portfolio business complet</li>
+                            <li>✅ Propriétés de luxe (Yacht, Casino)</li>
+                            <li>✅ Garage de collection</li>
+                            <li>💰 Revenus passifs maximisés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">Millions $</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Véhicules</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Missions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Business</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <div class="container">
+            <h2 class="section-title">Pro Tips</h2>
+            <p class="section-subtitle">Les secrets des meilleurs joueurs</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card" data-tip="money">
+                    <div class="tip-icon">💸</div>
+                    <h3>Maximiser les profits</h3>
+                    <div class="tip-content">
+                        <p><strong>La méthode optimale:</strong></p>
+                        <ol>
+                            <li>Lancer production Nightclub + Bunker</li>
+                            <li>Faire 1-2 Cayo Perico (3h)</li>
+                            <li>Alterner avec contrats Agence</li>
+                            <li>Vendre Nightclub/Bunker en session publique bonus</li>
+                        </ol>
+                        <p class="tip-result">💰 Résultat: 5-7M par session de jeu</p>
+                    </div>
+                </div>
+
+                <div class="tip-card" data-tip="stealth">
+                    <div class="tip-icon">🥷</div>
+                    <h3>Cayo Perico Solo</h3>
+                    <div class="tip-content">
+                        <p><strong>Route optimisée:</strong></p>
+                        <ul>
+                            <li>✅ Entrée: Drainage Tunnel</li>
+                            <li>✅ Objectif secondaire: 2 cocaïnes dans compound</li>
+                            <li>✅ Sortie: Main Gate (moto)</li>
+                            <li>✅ Temps record: ~12 minutes</li>
+                        </ul>
+                        <p class="tip-result">⏱️ Optimisé = Plus de runs par heure</p>
+                    </div>
+                </div>
+
+                <div class="tip-card" data-tip="pvp">
+                    <div class="tip-icon">⚔️</div>
+                    <h3>Survivre aux Griefers</h3>
+                    <div class="tip-content">
+                        <p><strong>Techniques défensives:</strong></p>
+                        <ul>
+                            <li>🛡️ Ghost Organization (12k, 3min invisibilité)</li>
+                            <li>🚁 Utiliser Sparrow/Oppressor pour mobilité</li>
+                            <li>🏢 Se téléporter au bureau/appartement</li>
+                            <li>⚡ Mode passif pour livraisons solo</li>
+                        </ul>
+                        <p class="tip-result">🎯 Protection = Profits sécurisés</p>
+                    </div>
+                </div>
+
+                <div class="tip-card" data-tip="invest">
+                    <div class="tip-icon">📈</div>
+                    <h3>Ordre d'investissement</h3>
+                    <div class="tip-content">
+                        <p><strong>Priorités par budget:</strong></p>
+                        <ol>
+                            <li>2.2M → Kosatka (débloquer Cayo Perico)</li>
+                            <li>2M → Agence (contrats VIP réguliers)</li>
+                            <li>3M → Oppressor Mk II (mobilité x10)</li>
+                            <li>2.8M → Nightclub + upgrades (passif)</li>
+                        </ol>
+                        <p class="tip-result">🎯 ROI optimal garanti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à conquérir Los Santos ?</h2>
+            <p>Rejoignez des millions de joueurs dans l'univers de GTA Online</p>
+            <a href="gameplay.html" class="btn btn-large">Commencer l'aventure</a>
+        </div>
+    </section>
+
+    <!-- Modal pour détails véhicules -->
+    <div class="modal" id="vehicle-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 class="modal-title">Chargement...</h2>
+                <div class="modal-details"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-footer">
+                        <span class="gta">GTA</span>
+                        <span class="online">ONLINE</span>
+                    </div>
+                    <p>Guide non-officiel pour les joueurs passionnés</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Accueil</a>
+                        <a href="gameplay.html">Gameplay</a>
+                        <a href="business.html">Business</a>
+                        <a href="vehicles.html">Véhicules</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:contact.gta.site@gmail.com">Email</a>
+                        <a href="contact.html">Nous contacter</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>GTA Online © Rockstar Games - Ce site est un projet de fan non-officiel</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
